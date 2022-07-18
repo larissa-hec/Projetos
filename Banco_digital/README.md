@@ -2,37 +2,37 @@ Instalação Django
 
 Projeto
 
-*Ambiente virtual do python
+Ambiente virtual do python
 python3 -m venv .venv
 
-*Ativação ambiente virtual Linux
+Ativação ambiente virtual Linux
 source .venv/bin/activate
 
-*Ativação ambiente virtual Windows
+Ativação ambiente virtual Windows
 .venv\Scripts\activate.bat
 
-*Instalação django
+Instalação django
 pip install django
 
-*criação projeto
+criação projeto
 django-admin startproject conta .
 configurações de idioma. no arquivo configuracoes/settings.py altere as constantes
 
 LANGUAGE_CODE = 'pt-br' 
 TIME_ZONE = 'America/Sao_Paulo'
 
-*criar um novo app
+criar um novo app
 python manage.py startapp Banco_digital .
 
-*Instalação do MySQLClient
+Instalação do MySQLClient
 pip install mysqlclient
 
-*Instalação Djangorestframework
+Instalação Djangorestframework
 pip install djangorestframework
 pip install markdown
 pip install django-filter 
 
-*Configuração
+Configuração
 No arquivo configuracoes/settings.py adicionar o 'rest_framework' aos APPS
 
 INSTALLED_APPS = [
@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'Banco_digital',
 ]
 
-*no arquivo configuracoes/urls.py
+no arquivo configuracoes/urls.py
 
 ...
 from rest_framework import routers
